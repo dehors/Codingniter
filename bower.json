@@ -1,0 +1,19 @@
+{
+  "name": "crudtutorial",
+  "homepage": "https://github.com/dehors/Codingniter",
+  "authors": [
+    "slam24 <luismartinez242011@gmail.com>"
+  ],
+  "description": "tutorial",
+  "main": "index.php",
+  "keywords": [
+    "CRUD",
+    "codingniter"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}
