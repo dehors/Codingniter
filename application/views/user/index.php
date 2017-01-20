@@ -26,7 +26,7 @@
 						<td><?php echo $value->usu_nombres; ?></td>
 						<td><?php echo $value->usu_apellidos; ?></td>
 						<td><?php echo $value->usu_correo; ?></td>
-						<td>...</td>
+						<td><a href="<?php echo base_url('user/destroy/').$value->usu_id; ?>" title="Eliminar"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Eliminar</a> <a href="<?php echo base_url('user/edit/').$value->usu_id; ?>" title="Editar"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Editar</a></td>
 					</tr>
 					<?php } ?>
 				</tbody>
@@ -61,8 +61,7 @@
 							<input type="text" name="txtTelefono" class="form-control" id="exampleInputEmail1" placeholder="Telefono">
 						</div>
 						<button type="submit" class="btn btn-default">Resgitrar usuario</button>
-					</form>
-					
+					</form>					
 				</div>
 				<div class="col-md-5">
 
