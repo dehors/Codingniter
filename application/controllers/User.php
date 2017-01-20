@@ -12,6 +12,7 @@ class User extends CI_Controller {
 	{
 		$data['contenido'] = "user/index";
 		$data['selperfil'] = $this->Model_User->selPerfil();
+		$data['Listusers'] = $this->Model_User->Get();
 		$this->load->view('master_layout',$data);
 	}
 	public function store(){
@@ -23,7 +24,7 @@ class User extends CI_Controller {
 			$txtApellidos = $datos['txtApellidos'];
 			$txtCorreo = $datos['txtCorreo'];
 			$txtTelefono = $datos['txtTelefono'];
-			$this->Model_User->Store($txtId,$txtNombres,$txtApellidos,$txtCorreo,$txtTelefono);
+			$this->Model_User->Save($txtId,$txtNombres,$txtApellidos,$txtCorreo,$txtTelefono);
 		}
 	}
 }

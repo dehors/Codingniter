@@ -16,7 +16,12 @@ class Model_User extends CI_Model
 		return $query->result();
 	}
 
-	public function Store($idper,$nombres,$apellidos,$correo,$telefono)
+	public function Get(){
+		$query = $this->db->query("Select * from usuario u inner join perfil p on u.per_id = p.per_id");
+		return $query->result();
+	}
+
+	public function Save($idper,$nombres,$apellidos,$correo,$telefono)
 	{
 		$arraydata = array(
 				'per_id' => $idper,
